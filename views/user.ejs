@@ -1,0 +1,58 @@
+<html>
+    <head>
+
+    </head>
+    <style>
+        body{
+            /* background-color: aqua; */
+            text-align: center;
+            /* margin-top: 50vh; */
+            background-image: url("/pexels-pixabay-276514 (1).jpg");
+            /* padding: 0; */
+            margin: 0;
+        }
+        form{
+            margin-top: 200px;
+        }
+        
+        input{
+            font-size: large;
+            background-color: orange;
+            border: none;
+            text-decoration: none;
+            color: white;
+            padding: 10px 10px;
+            margin: 10px 10px;
+            cursor: pointer;
+        }
+        h1{
+            color: aqua;
+        }
+        nav{
+            background-color: aquamarine;
+            height: 50px;
+            margin-top: 0;
+            
+        }
+        #sign-up{
+            
+            margin-left:80%;
+            border: 3px solid black;
+            border-radius: 4px;
+        }
+    </style>
+    <body>
+        <nav>
+            <a href="/users/sign-up" style="text-decoration:none" id="sign-up">Sign Up</a>
+        </nav>
+        
+        <form action="/users/create-session" method="post">
+            <h1>Login User</h1>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Sign In">
+
+        </form>
+        
+    </body>
+</html>
